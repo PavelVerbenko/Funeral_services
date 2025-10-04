@@ -1,0 +1,9 @@
+/* Стили для страниц */
+.page {
+    display: none;
+    padding: 3rem 0;
+}
+
+.page.active {
+    display: block;
+}

@@ -1,0 +1,149 @@
+.breadcrumbs {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.breadcrumbs a {
+    color: var(--accent-color);
+    transition: var(--transition);
+}
+
+.breadcrumbs a:hover {
+    color: var(--primary-color);
+}
+
+.service-detail {
+    padding: 2rem 0;
+    min-height: calc(100vh - 200px);
+}
+
+.service-detail-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 300;
+}
+
+.service-detail-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+    align-items: start;
+}
+
+.service-detail-image {
+    position: relative;
+}
+
+.service-detail-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.service-detail-image img:hover {
+    transform: scale(1.02);
+}
+
+.service-detail-text h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.service-detail-text h3 {
+    color: var(--secondary-color);
+    margin: 2rem 0 1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.service-detail-text p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.service-detail-text ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+    color: #555;
+}
+
+.service-detail-text li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.price-note {
+    font-size: 0.9rem;
+    color: #888;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.service-detail-actions {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn.secondary {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.btn.secondary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Адаптивность */
+@media (max-width: 968px) {
+    .service-detail-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    text
+    .service-detail-title {
+        font-size: 2rem;
+    }
+
+    .service-detail-image img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .service-detail-title {
+        font-size: 1.8rem;
+    }
+
+    text
+    .service-detail-actions {
+        flex-direction: column;
+    }
+
+    .service-detail-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-detail-text h3 {
+        font-size: 1.2rem;
+    }
+
+    .breadcrumbs {
+        font-size: 0.8rem;
+    }
+}
